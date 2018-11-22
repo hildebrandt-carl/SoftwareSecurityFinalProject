@@ -267,8 +267,6 @@ if __name__=="__main__":
     OD_Obj = ObsticleDetection()
     RB_Obj = RobotBehaviourSensors(set_rate)
     PN_Obj = Planner(set_rate)
-    MC_Obj = MarkovChain()
-    TR_Obj = Trust()
 
     # Defining where we want the robot to go
     goal = [[1.5, -1], [-1.5, -1], [0.5, 2]]
