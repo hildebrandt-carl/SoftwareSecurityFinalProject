@@ -1,0 +1,8 @@
+prefix=/home/parallels/Desktop/Parallels Shared Folders/Dropbox/UVA/Classes/Software Security/Final_Project/Code/ros_ws/devel
+
+Name: robot_drive
+Description: Description of robot_drive
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/parallels/Desktop/Parallels Shared Folders/Dropbox/UVA/Classes/Software Security/Final_Project/Code/ros_ws/devel/lib 
+Requires: 
