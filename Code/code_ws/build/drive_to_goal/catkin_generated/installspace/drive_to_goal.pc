@@ -1,8 +1,0 @@
-prefix=/home/carldesktop/Documents/SoftwareSecurityFinalProject/Code/code_ws/install
-
-Name: drive_to_goal
-Description: Description of drive_to_goal
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/carldesktop/Documents/SoftwareSecurityFinalProject/Code/code_ws/install/lib 
-Requires: 

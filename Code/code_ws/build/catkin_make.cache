@@ -1,2 +1,0 @@
-drive_to_goal
--DCATKIN_DEVEL_PREFIX=/home/carldesktop/Documents/SoftwareSecurityFinalProject/Code/code_ws/devel -DCMAKE_INSTALL_PREFIX=/home/carldesktop/Documents/SoftwareSecurityFinalProject/Code/code_ws/install -G Unix Makefiles
