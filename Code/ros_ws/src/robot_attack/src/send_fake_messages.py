@@ -28,7 +28,6 @@ def SendFakeMoveMessage(linear_vel, angular_vel):
 def SendFakeScanMessage(length):
     range_readings = array.array('f',(random.uniform(0,4) for i in range(0,length)))
     intensity_readings = array.array('f',(random.uniform(0,4) for i in range(0,length)))
-    print(len(range_readings))
 
     # Create a fake object at 2 degrees
     range_readings[2] = 0.3 
@@ -86,12 +85,12 @@ if __name__=="__main__":
     while not rospy.is_shutdown():
 
         # Sending fake messages
-        #SendFakeMoveMessage(0,0.3)
+        SendFakeMoveMessage(0,0.3)
 
         slow_down_counter += 1
-        if slow_down_counter > 50
+        if slow_down_counter > 2:
             slow_down_counter = 0
-            SendFakeScanMessage(360)
+            #SendFakeScanMessage(360)
             
         #SendFakePosMessage(random.uniform(-2,2),random.uniform(-2,2))
 
