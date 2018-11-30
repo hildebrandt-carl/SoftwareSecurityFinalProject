@@ -1,2 +1,0 @@
-robot_attack:robot_drive
--DCATKIN_DEVEL_PREFIX=/home/parallels/Desktop/Parallels Shared Folders/Dropbox/UVA/Classes/Software Security/Final_Project/Code/ros_ws/devel -DCMAKE_INSTALL_PREFIX=/home/parallels/Desktop/Parallels Shared Folders/Dropbox/UVA/Classes/Software Security/Final_Project/Code/ros_ws/install -G Unix Makefiles

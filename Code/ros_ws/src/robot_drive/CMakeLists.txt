@@ -50,8 +50,7 @@ find_package(catkin REQUIRED COMPONENTS
 ## Generate messages in the 'msg' folder
 # add_message_files(
 #   FILES
-#   Message1.msg
-#   Message2.msg
+#   Goal.msg
 # )
 
 ## Generate services in the 'srv' folder
@@ -106,7 +105,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES robot_drive
-#  CATKIN_DEPENDS geometry_msgs rospy sensor_msgs std_msgs
+#  CATKIN_DEPENDS message_runtime geometry_msgs rospy sensor_msgs std_msgs
 #  DEPENDS system_lib
 )
 
