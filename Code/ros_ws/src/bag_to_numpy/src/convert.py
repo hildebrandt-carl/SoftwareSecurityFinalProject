@@ -2,6 +2,8 @@
 
 import rospy
 import array
+import sys
+
 import numpy as np
 
 from geometry_msgs.msg import Twist
@@ -9,10 +11,18 @@ from geometry_msgs.msg import TransformStamped
 from sensor_msgs.msg import LaserScan
 
 a = []
+global filename
 
 def shutdown_sequence():
-    x = np.stack(a)
-    np.save('good007.npy', x)
+    global filename
+    print("Trying to save to " + str(filename))
+    if len(a) > 0:
+        x = np.stack(a)
+        np.save(filename, x)
+        print("Saved to " + str(filename))
+    else:
+        print("No data to save")
+
 
 def create_message(pos,cmd,scan):
     global a
@@ -43,9 +53,7 @@ def create_message(pos,cmd,scan):
         for data in scan:
             final_output[start_index + 4] = scan[start_index]
         final_output[-1] = 1
-
-    print(final_output)
-    print("")
+        
     a.append(final_output)
 
 def command_call_back(ros_data):
@@ -77,6 +85,18 @@ def pos_call_back(ros_data):
 
 
 if __name__=="__main__":
+    global filename
+
+    if len(sys.argv) < 2:
+        print("Usage: rosrun bag_to_numpy convert.py filename")
+        filename = "default.npy"
+    else:
+        # Get the parameters (filename)
+        filename =  sys.argv[1]
+
+    # Display the save location
+    print("File set to `" + str(filename) + "'")
+
     # Start the ros node
     rospy.init_node('converter')
     rospy.on_shutdown(shutdown_sequence)
