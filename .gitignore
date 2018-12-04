@@ -1,8 +1,16 @@
+# Ignore the build files
 Code/ros_ws/devel/
 Code/ros_ws/build/
 
+# Ignore DS folder
 .DS_Store
 
-Videos/
+# Ignore movies
+*.mov
+*.mp4
 
+# Ignore the presentation files
+*.key
+
+# Ignore the final numpy files
 Final*.npy
