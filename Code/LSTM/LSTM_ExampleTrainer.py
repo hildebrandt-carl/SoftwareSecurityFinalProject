@@ -32,17 +32,3 @@ model.fit(X_train, y_train, epochs=3, batch_size=64)
 # Final evaluation of the model
 scores = model.evaluate(X_test, y_test, verbose=0)
 print("Accuracy: %.2f%%" % (scores[1]*100))
-
-# Serialize model to JSON
-model_json = model.to_json()
-with open("saved_models/model.json", "w") as json_file:
-    json_file.write(model_json)
-# Serialize weights to HDF5
-model.save_weights("saved_models/model.h5")
-print("Saved model to disk")
-
-
-
-
-
-
