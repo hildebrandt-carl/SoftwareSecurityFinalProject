@@ -1,6 +1,7 @@
 # LSTM for sequence classification in the IMDB dataset
 import numpy
 import os
+import time
 import matplotlib.pyplot as plt  
 
 from keras.datasets import imdb
@@ -121,6 +122,14 @@ print("Loaded model from disk")
 loaded_model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
 
 # Final evaluation of the model
+start = time.clock() 
 scores = loaded_model.evaluate(x_test, y_test, verbose=0)
-print("Accuracy: %.2f%%" % (scores[1]*100))
+end = time.clock() 
+
+# Print the final statistics of the model
+print("Accuracy: " + str(scores[1]*100))
+print("Time taken: " + str(end-start))
+print("Total sets of data classified: " + str(x_test.shape[0]))
+print("Total messages per data set: " + str(x_test.shape[1]))
+print("Classification time per image: " +str((end-start)/(x_test.shape[0] * x_test.shape[1])))
 exit()
