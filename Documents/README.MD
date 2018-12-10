@@ -4,7 +4,7 @@ This folder contains all documentation done for the report. The documentation in
 
 * [Presentation](./Presentation) - Contains the final presentation used in my report. **NOTE** the final presentations were removed from the repository due to size.
 * [Proposal](./Proposal) - Contains the initial proposal for this project.
-* [Report](./Report) - Contains my final report. For more information on this project I would recommend starting here.
+* [Report](./Report) - Contains my final report. For more information on this project, I would recommend starting here.
 
 ## Downloading the presentation
 

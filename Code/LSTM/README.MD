@@ -1,6 +1,6 @@
 # LSTM Code
 
-This folder contains two LSTM network trainers. The first one is example code which can be run without data, as it gets the data from the keras datasets folder. The seconds it the LSTM used in my report.
+This folder contains two LSTM network trainers. The first one is example code which can be run without data, as it gets the data from the Keras datasets folder. The seconds it the LSTM used in my report.
 
 ## Prerequists
 

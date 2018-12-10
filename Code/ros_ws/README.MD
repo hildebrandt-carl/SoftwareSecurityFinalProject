@@ -1,10 +1,10 @@
 # ROS Workspace Code
 
-This folder contains the ROS control and attack code. The control code generates random points which is used by the robot as goals. It reaches its goal using a PID angle controller. The attack code implements three attacks and each attack can be run by uncommenting the relevant code. This folder also contains a bag to numpy file which converts the bag files to numpy files.
+This folder contains the ROS control and attack code. The control code generates random points which are used by the robot as goals. It reaches its goal using a PID angle controller. The attack code implements three attacks and each attack can be run by uncommenting the relevant code. This folder also contains a bag to numpy file which converts the bag files to numpy files.
 
 ## Prerequisits
 
-This code requires you to have ROS intalled.
+This code requires you to have ROS installed.
 
 ## Running the code
 

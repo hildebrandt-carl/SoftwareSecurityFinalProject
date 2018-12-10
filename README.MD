@@ -1,6 +1,6 @@
 # Software Security - Final Project
 
-This is my final software security project for my fall semester 2018 at the University of Virgina. This project is about assessing and defending against security threats in the robotic operating system (ROS). For this project I design a segment of code which drives a robot to random goals while obsering sensor data. I then create another peice of code which attacks the robot using different attack techniques. Finally I use Keras to develop a recurrent neural network (RNN) which uses LSTM cells to classify between attack messages and normal messages.
+This is my final software security project for my fall semester 2018 at the University of Virginia. This project is about assessing and defending against security threats in the robotic operating system (ROS). For this project, I design a segment of code which drives a robot to random goals while observing sensor data. I then created another piece of code which attacks the robot using different attack techniques. Finally, I use Keras to develop a recurrent neural network (RNN) which uses LSTM cells to classify between attack messages and standard messages.
 
 I am able to achieve a 92% accuracy with this model, meaning that I would have been able to drop and ignore 92% of my created attack messages.
 

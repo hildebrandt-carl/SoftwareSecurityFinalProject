@@ -4,7 +4,7 @@ The following folder contains the generated bag files of the control and attack 
 
 ## Original Data
 
-This folder contains the original data and no extra downloads are necessary. Each bag file is roughly 20 seconds worth of data. The data was created using ROS kinetic.
+This folder contains the original data, and no extra downloads are necessary. Each bag file is roughly 20 seconds worth of data. The data was created using ROS kinetic.
 
 ## Creating the data
 
