@@ -13,6 +13,10 @@ I am able to achieve a 92% accuracy with this model, meaning that I would have b
 * [NumpyFiles](./NumpyFiles) - Contains the converted bagfiles, which are now saved as numpy files. Also contains code used to merge files into a single numpy file.
 * [Videos](./Videos) - Contains the raw and final video results from the project.
 
+## Video
+
+[Software Security Final Project - Part 1](https://youtu.be/T-RW7DHarrI)
+
 ## Authors
 
 * **Carl Hildebrandt** - *Initial work* - [hildebrandt-carl](https://github.com/hildebrandt-carl)
